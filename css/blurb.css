@@ -1,0 +1,68 @@
+@charset "utf-8";
+:root {
+    --accent:#6ce763;
+    --bc: #fafafa;
+}
+.blurb_section {
+    max-width: 400px;
+    margin: 60px auto 60px;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.1); */
+    border: 1px solid #ccc;
+}
+.blurb_header {
+    text-align: center;
+}
+.blurb_header h2 {
+    font-size: 1.2rem;
+}
+.blurb_content form {
+    
+}
+.form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1rem;
+}
+.form_group label {
+    color: #333;
+    font-size: 0.9rem;
+}
+.form_group input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+.blurb_RelatedMatters {
+    background-color: var(--bc);
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    padding: 8px;
+}
+.blurb_RelatedMatters span {
+    color: #ff3d3d;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.form_checkbox {
+    padding-top: 1rem;
+}
+.blurb_content {
+    transition: transform 0.3s ease;
+}
+.blurb_content button {
+    margin-top: 1rem;
+    padding: 14.42px 8.6rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+.blurb_content button:hover {
+    background-color: var(--accent);
+}

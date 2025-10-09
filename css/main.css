@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* #navigation {
+    position: fixed;
+    top: 0; left: 0; 
+    z-index: 99;
+    width: 100%; height: 100px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fffc;
+} */
+:root{
+    --accent:#6ce763;
+    --hover: #6dc167;
+    --m_font: 'Pretendard';
+    --radius: 8px;
+    --sub:#1abc9c;
+}
+h3{
+    font-size: 1.3rem;
+}
+
+ /* slogan 이미지 및 검색 */
+.slogan{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/hero.jpg') center/cover no-repeat; */
+    background-image: url(../image/Tiny\ real\ estate\ agents\ with\ clients\ near\ houses.jpg);
+    background-position: left center;
+    background-size: 99%;
+    color: #000;
+    animation: fadeIn 1s ease;
+}
+.slogan h2 {
+    font-size: 3rem;
+}
+.slogan p {
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: var(--m_font);
+    color: #000;
+}
+.search_slogan{
+    display: flex;
+    gap: 1rem;
+    background: #eee;
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.search_slogan input {
+    padding: 14px;
+    width: 700px;
+    font-size: 1rem;
+    border: none;
+}
+.search_slogan button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: var(--radius);
+    background-color: var(--accent);
+    color: #fff;
+    transition: all;
+}
+
+/* Main */
+#main {
+    padding: 0 5rem;
+}
+section {
+    /* margin: 1.5rem auto; */
+    margin-bottom: 1.5rem;
+}
+/* Property  */
+.property {
+ /* 슬로건과 사이에 여백 추가 */
+    max-width: 1200px;
+}
+.property h2 {
+    padding-left: 6%;
+    font-family: var(--m_font);
+}
+.property_hashtag {
+    display: flex;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center; /* 중앙 정렬 */
+    width: 100%; /* 전체 너비 사용 */
+    color: var(--sub);
+    padding-left: 6%;
+}
+.property_section {
+    display: flex;
+    width: 108%;
+    background: #fff;
+    /* padding: 1rem; */
+    /* margin-left: 10rem; */
+}
+.property_list {
+    padding-left: 5rem;
+}
+.property_img {
+    height: 150px;
+}
+.property_tag {
+    color: #000;
+}
+.property_price {
+    color: var(--sub);
+    font-size: 1.2rem;
+}
+.property_loca {
+    color: #000;
+}
+
+/* Features Section */
+.features h2{
+    padding-left: 6%;
+}
+.features-cur {
+    padding-left: 6%;
+    color: var(--sub);
+    font-family: var(--m_font);
+    font-size: 1.2rem;
+}
+.features-section {
+    background-color: var(--light);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.features-grid {
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.feature-card h3 {
+    padding: 0.5rem 0;
+}
+.feature-card p {
+    color: #000;
+}
+
+.feature-image {
+    width: 30%;
+    /* margin-left: 40%; */
+}
+/* Map container */
+.map_section {
+    padding-top: 1rem;
+}
+.map_section h2 {
+    padding-left: 6%;
+}
+.map_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.map_container iframe {
+    width: 88%;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+}

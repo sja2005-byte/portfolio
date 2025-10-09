@@ -1,0 +1,112 @@
+@charset "utf-8";
+:root {
+  --accent:#6ce763;
+  --hover: #6dc167;
+  --radius: 8px;
+}
+* {
+      font-family: 'Noto Sans KR', sans-serif;
+  }
+
+body {
+  background: #f0f2f5;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* 로그인/비밀번호찾기 폼 */
+.find-container {
+  margin: 80px auto 60px;
+  background: #fff;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: var(--radius);
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+  border: 1px solid #ccc;
+}
+
+.find-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.tab-buttons button.active {
+  /* background: #4a90e2; */
+  background-color: var(--accent);
+  color: white;
+}
+
+.form-section {
+  display: none;
+}
+
+.form-section.active {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #357abd;
+}
+
+/* 로그인 */
+.login_link {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+.login_link p {
+  color: #888;
+}
+.login_link a {
+color: #4a90e2;
+font-weight: 575;
+}

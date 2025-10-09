@@ -1,0 +1,169 @@
+@charset "utf-8";
+:root{
+    --accent:#6ce763;
+    --hover: #6dc167;
+    --sub:#1abc9c;
+    --radius: 8px;
+    --card-bg: #fff;
+}
+section{
+        margin-bottom: 60px;
+}
+/* article subHeaderComdpany */
+#subHeaderComdpany{
+    position: relative;
+    margin-left: 25%;
+    text-align: center;
+    background: var(--card-bg);
+    width: 50%;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.subHeaderComdpany-img {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../image/bg_comdpany.jpg);
+    margin-bottom: 20px;
+}
+#subHeaderComdpany span {
+    color: #000;
+    font-family: 'Pretendard';
+    font-size: 1.2rem;
+}
+#subHeaderComdpany h2 {
+    font-size: 1.7rem;
+    color: var(--sub);
+}
+#subHeaderComdpany p {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+#main-comdpany{
+    max-width: 900px;
+    /* max-width: 1200px; */
+    margin: 4rem auto;
+}
+#main-comdpany h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    /* border-left: 4px solid var(--sub); */
+    /* padding-left: 10px; */
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* 회사의 약속 */
+.ComdpanyPromise{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.ComdpanyPromise h3{
+    font-size: 1.5rem;
+}
+.ComdpanyPromise h3 span {
+    color: #2c88c6;
+}
+.ComdpanyPromise p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #34495e;
+    padding: 1rem;
+}
+.ComdpanyOat {
+    margin-left: 10px;
+    text-align: center;
+}
+.ComdpanyPolicy {
+    background: #ecf0f1;
+    margin-top: 1rem;
+    margin-left: 170px;
+    border-left: 4px solid #1abc9c;
+    width: 60%;
+    text-align: left;
+}
+
+/* 회사 연혁 */
+.ComdpanyTimeline{
+    margin-bottom: 60px;
+}
+
+.ComdpanyTimeline span {
+    font-weight: normal;
+}
+.timeline_dl{
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+    margin-bottom: 10px;
+}
+.timeline_y{
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #2c88c6;  
+}
+.timeline_ex {
+    font-size: 1.4rem;
+    color: #000;
+}
+.timeline_dd2 {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.timeline_dt {
+    width: 80px;
+    font-weight: bold;
+    font-size: 1.35rem;
+    color: #2980b9;
+}
+.timeline_dd{
+    display: flex;
+    display: inline-block;
+    flex-direction: row;
+        margin-left: 10px;
+        font-size: 1.2rem;
+}
+.timeline_column {
+    justify-content: column;
+}
+
+/* CEO 인사말 */
+.intro-company p{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #34495e;
+}
+.ceo-message {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .ceo-photo {
+      float: right;
+      margin-left: 20px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+    .ceo-message p {
+        color: #34495e;
+    }
+    #toggleBtn {
+    margin-top: 20px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    }
