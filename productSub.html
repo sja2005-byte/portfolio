@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매물 정보 - 상세페이지</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/productSub.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/productSub2.js"></script>
+</head>
+<body>
+    <!-- header 및 네비게이션 -->
+    <header>
+        <h1 class="hidden">부동산 중개 사이트</h1>
+        <nav id="navbar">
+            <div class="nav_menu">
+                <a href="index.html" class="logo">승진부동산</a>
+                <ul>
+                    <li><a href="company.html">회사소개</a></li>
+                    <li><a href="inquiry.html">문의하기</a></li>
+                    <li><a href="product.html">매물찾기</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="blurb.html">중개사무소 광고문의</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="wrap page">
+        <section class="detail-hero card">
+            <div class="gallery">
+                <div class="main-img" id="mainImg" style="background-image:url('./image/apat5.jpg');"></div>
+                <div class="thumbs" id="thumbs">
+                <button class="thumb" data-src="https://picsum.photos/id/1018/1200/700"></button>
+                <button class="thumb" data-src="https://picsum.photos/id/1016/1200/700"></button>
+                <button class="thumb" data-src="https://picsum.photos/id/1021/1200/700"></button>
+                <button class="thumb" data-src="https://picsum.photos/id/1025/1200/700"></button>
+                </div>
+            </div>
+
+            <div class="summary">
+                <h2 class="apat_title">펜타힐즈 W</h2>
+                <p class="address">경산시 중산동 628</p>
+
+                <div class="price-row">
+                <div class="price">
+                    <span class="label">분양가</span>
+                    <strong class="value">₩ 80,000,000</strong>
+                    <span class="small">(전용 84㎡ 기준)</span>
+                </div>
+                <div class="status">
+                    <span class="badge available">분양중</span>
+                    <span class="badge">잔여세대 9</span>
+                </div>
+                </div>
+
+                <ul class="meta">
+                <li>규모: 지하2 / 지상 40층</li>
+                <li>세대수: 420세대</li>
+                <li>입주예정: 2029-08</li>
+                </ul>
+
+                <div class="cta-row">
+                <a href="#contact" class="btn primary" id="bookBtn">상담 예약</a>
+                <button class="btn ghost" id="tourBtn">VR 투어 보기</button>
+                </div>
+
+                <div class="mortgage card small" id="mortgage">
+                <h4>대출 시뮬레이터</h4>
+                <div class="row">
+                    <label>대출비율(LTV) <input type="number" id="ltv" value="60" min="0" max="100" >%</label>
+                    <label>금리(연) <input type="number" id="rate" value="4.5" step="0.01" >%</label>
+                    <label>기간(년) <input type="number" id="years" value="30" min="1" ></label>
+                </div>
+                <div class="result" id="mortgageResult">월 상환금: <strong id="monthly">-</strong></div>
+                <button class="btn small" id="calcBtn">계산</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card info-grid">
+            <h2 class="hidden">상세정보</h2>
+            <div class="tabs" role="tablist" aria-label="상세정보 탭" id="tabs">
+                <button role="tab" aria-selected="true" data-tab="overview">개요</button>
+                <button role="tab" data-tab="floorplan">평면/타입</button>
+                <button role="tab" data-tab="location">입지/교통</button>
+                <button role="tab" data-tab="documents">서류/청약</button>
+            </div>
+
+            <div class="tabpanels">
+                <article id="overview" class="tabpanel_active" >
+                    <h3>단지 개요</h3>
+                    <p>조망 가능한 프리미엄 단지. 근린생활시설과 교육시설이 인접해 있고, 녹지 비율이 높은 설계.</p>
+
+                    <h4>상세 스펙</h4>
+                    <table class="specs">
+                        <tr><th>전용면적</th><td>59 / 84 / 101 ㎡</td></tr>
+                        <tr><th>난방</th><td>지역난방</td></tr>
+                        <tr><th>주차</th><td>세대당 1.3대</td></tr>
+                    </table>
+                </article>
+
+                <article id="floorplan" class="tabpanel">
+                    <h3>평면도</h3>
+                    <div class="floor-grid">
+                        <div class="floor card">
+                        <img src="./image/floorPlan2916611.jpg" alt="평면도 A타입" >
+                        <div class="ft">A타입 84㎡</div>
+                        </div>
+                        <div class="floor card">
+                        <img src="./image/floorPlan2902365.jpg" alt="평면도 B타입" >
+                        <div class="ft">B타입 101㎡</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="location" class="tabpanel" hidden>
+                    <h3>교통 / 주변시설</h3>
+                    <ul>
+                        <li>지하철 2호선 역 도보 10분</li>
+                        <li>초·중·고 학교 가깝다</li>
+                        <li>이마트, 병원 등 생활편의시설 인접</li>
+                    </ul>
+                    <!-- <div class="map" id="map">지도 영역 (여기에 지도 API 연동)</div> -->
+                    <h3>지도 영역</h3>    
+                    <figure class="map_Sub">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.2979736016446!2d128.62457857356574!3d35.880825247968524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e195cf24f40d%3A0xf4ed22431d783ec8!2z7ZWc6rWtSVTqtZDsnKHsm5A!5e0!3m2!1sen!2skr!4v1738581490559!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
+                </article>
+
+                <article id="documents" class="tabpanel" hidden>
+                    <h3>청약 / 서류</h3>
+                    <ul>
+                        <li><a href="#" download>분양안내서 (PDF)</a></li>
+                        <li><a href="#" download>평면도 모음 (ZIP)</a></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="card contact" id="contact">
+            <h3>문의 / 상담 신청</h3>
+            <form id="contactForm">
+                <label>이름<input type="text" id="name" required ></label>
+                <label>연락처<input type="tel" id="phone" required ></label>
+                <label>희망 연락시간
+                <select id="time">
+                    <option>오전</option><option>오후</option><option>저녁</option>
+                </select>
+                </label>
+                <label class="consent"><input type="checkbox" id="agree" > 개인정보 수집·이용 동의</label>
+                <div class="form-actions">
+                <button class="btn primary" type="submit">상담신청</button>
+                <button class="btn ghost" type="button" id="resetBtn">초기화</button>
+                </div>
+            </form>
+            <div id="formMsg" class="form-msg" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer_info">
+            <p>상호: (주)승진부동산 | 대표: 홍길동 | Tel: 053-123-1234 | 사업자등록번호: 123-45-67890</p>
+            <p>주소: 대구광역시 동구 동대구로 111 (성암동) 승진빌딩 4층</p>
+            <p>중개업등록번호: 제12345-67890호 | 개인정보책임관리자: 홍길동</p>
+            <p>&copy; 2025 승진부동산. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="닫기">✕</button>
+    <img id="lb-img" src="" alt="확대 이미지" >
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광고문의 페이지 - 승진부동산</title>
+    <link rel="stylesheet" href="css/webFont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/blurb.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/blurb.js" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="hidden">부동산 중개 로그인 사이트</h1>
+        <nav id="navbar">
+            <div class="nav_menu">
+                <a href="index.html" class="logo">승진부동산</a>
+                <ul>
+                    <li><a href="company.html">회사소개</a></li>
+                    <li><a href="inquiry.html">문의하기</a></li>
+                    <li><a href="product.html">매물찾기</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="blurb.html">중개사무소 광고문의</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main id="main">
+        <section class="blurb_section">
+            <div class="blurb_header">
+                <h1 class="logo">승진부동산</h1>
+                <h2>광고문의</h2>
+            </div>
+            <div class="blurb_content">
+                <form action="#" method="POST">
+                    <div class="form_group">
+                        <label for="username">중개사무소명</label>
+                        <input type="text" id="username" name="id" placeholder="중개사무소 이름을 입력하세요">
+                    </div>
+                    <div class="form_group">
+                        <label for="local">지역</label>
+                        <input type="search" id="local" name="local" placeholder="지역 동까지 입력하세요">
+                    </div>
+                    <div class="form_group">
+                        <label for="phone">전화번호</label>
+                        <input type="tel" id="phone" name="tel" placeholder="전화번호를 입력하세요">
+                    </div>
+                    <div class="blurb_RelatedMatters">
+                        <span>개인정보 수집 및 이용에 관한 사항(필수)</span>
+                        <p>1. 수집목적: 광고 문의 안내</p>
+                        <p>2. 수집항목: 중개사무소명, 지역 장소, 전화번호</p>
+                    </div>
+                    <div class="form_checkbox">
+                        <input type="checkbox" id="agreement">
+                        <label for="agreement">개인정보를 수집 및 이용함에 동의합니다.</label>
+                    </div>
+                    <button>문의하기</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

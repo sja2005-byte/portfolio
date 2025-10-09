@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매물 찾기</title>
+    <link rel="stylesheet" href="css/webFont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="js/product.js" defer></script>
+</head>
+
+<body>
+    <!-- header 및 네비게이션 -->
+    <header>
+        <h1 class="hidden">부동산 중개 사이트</h1>
+        <nav id="navbar">
+            <div class="nav_menu">
+                <a href="index.html" class="logo">승진부동산</a>
+                <ul>
+                    <li><a href="company.html">회사소개</a></li>
+                    <li><a href="inquiry.html">문의하기</a></li>
+                    <li><a href="product.html">매물찾기</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="blurb.html">중개사무소 광고문의</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Slogan 섹션 -->
+    <section id="PropertySlogan">
+        <h1>매물&nbsp;/&nbsp;검색</h1>
+        <p>프리미엄 주거공간을 검색하고 비교해보세요.</p>
+    </section>
+    <main>
+        <div class="main-propery">
+            <!-- 좌측 검색 필터 -->
+            <section class="filter">
+                <!-- 정렬 바 -->
+                <aside class="options-bar" title="매물 정렬 옵션">
+                    <h3 class="hidden">매물 정렬 옵션</h3>
+                    <!-- <div class="sort-options2">
+                        <label>정렬: </label>
+                        <select>
+                            <option>최신순</option>
+                            <option>가격 높은순</option>
+                            <option>가격 낮은순</option>
+                            <option>면적순</option>
+                        </select>
+                    </div> -->
+                </aside>
+                <div class="search-filters">
+                    <h2>상세 카테고리</h2>
+                    
+                    <div class="filter-section">
+                        <h3>주거 유형</h3>
+                        <div class="filter-buttons">
+                            <button onclick="filterType('all')" class="active">전체</button>
+                            <button onclick="filterType('아파트')">아파트</button>
+                            <button onclick="filterType('오피스텔')">오피스텔</button>
+                            <button onclick="filterType('빌라')">빌라</button>
+                            <button onclick="filterType('단독주택')">단독주택</button>
+                        </div>
+                    </div>
+                
+                    <div class="filter-section">
+                        <h3>지역</h3>
+                        <div class="filter-buttons">
+                            <button onclick="filterType('all')">전체</button>
+                            <button>중구</button>
+                            <button>서구</button>
+                            <button>수성구</button>
+                            <button>북구</button>
+                        </div>
+                    </div>
+                
+                    <div class="filter-section">
+                        <h3>가격대</h3>
+                        <div class="filter-buttons">
+                            <button onclick="filterType('all')">전체</button>
+                            <button>5억 이하</button>
+                            <button>5억-10억</button>
+                            <button>10억 이상</button>
+                        </div>
+                    </div>
+                
+                    <div class="filter-section">
+                        <h3>면적</h3>
+                        <div class="filter-buttons">
+                            <button onclick="filterType('all')">전체</button>
+                            <button>30평 이하</button>
+                            <button>30-50평</button>
+                            <button>50평 이상</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 우측 매물 목록 -->
+            <section id="property-list">
+                <div class="grid" id="propertyGrid">
+                    <!-- 매물 1 -->
+                    <div class="grid-item" data-type="아파트">
+                        <a href="productSub.html">
+                            <img src="./image/apat1.jpg" alt="힐스테이트동인센트럴">
+                            <div class="property-info">
+                                <span class="property-tag">아파트</span>
+                                <h3>힐스테이트동인센트럴</h3>
+                                <div class="property-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>중구 동인동1가</span>
+                                </div>
+                                <div class="property-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">면적</span>
+                                        <span class="detail-value">115㎡</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">가격</span>
+                                        <span class="detail-value price">5.1억원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-type="아파트">
+                        <a href="productSub.html">
+                            <img src="./image/apat2.jpg" alt="태왕아너스라플란드">
+                            <div class="property-info">
+                                <span class="property-tag">아파트</span>
+                                <h3>태왕아너스라플란드</h3>
+                                <div class="property-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>중구 동인동3가</span>
+                                </div>
+                                <div class="property-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">면적</span>
+                                        <span class="detail-value">79㎡</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">가격</span>
+                                        <span class="detail-value price">2.9억원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-type="아파트">
+                        <a href="productSub.html">
+                            <img src="./image/apat3.jpg" alt="수성범어더블유">
+                            <div class="property-info">
+                                <span class="property-tag">아파트</span>
+                                <h3>수성범어더블유</h3>
+                                <div class="property-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>수성구 범어동</span>
+                                </div>
+                                <div class="property-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">면적</span>
+                                        <span class="detail-value">114㎡</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">가격</span>
+                                        <span class="detail-value price">14.7억원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-type="아파트">
+                        <a href="productSub.html">
+                            <img src="./image/apat4.jpg" alt="비둘기 맨션">
+                            <div class="property-info">
+                                <span class="property-tag">아파트</span>
+                                <h3>비둘기 맨션</h3>
+                                <div class="property-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>서구 평리동</span>
+                                </div>
+                                <div class="property-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">면적</span>
+                                        <span class="detail-value">118㎡</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">가격</span>
+                                        <span class="detail-value price">1.6억원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-type="오피스텔">
+                        <a href="productSub.html">
+                            <img src="./image/officetel3.jpg" alt="동성로하우스디어반">
+                            <div class="property-info">
+                                <span class="property-tag">오피스텔</span>
+                                <h3>동성로하우스디어반</h3>
+                                <div class="property-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>중구 남일동</span>
+                                </div>
+                                <div class="property-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">면적</span>
+                                        <span class="detail-value">54㎡</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">가격</span>
+                                        <span class="detail-value price">1.2억원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-type="오피스텔">
+                        <a href="productSub.html">
+                            <img src="./image/officetel2.jpg" alt="테라스하임">
+                            <div class="property-info">
+                                <span class="property-tag">오피스텔</span>
+                                <h3>테라스하임</h3>
+                                <div class="property-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>수성구 범어동</span>
+                                </div>
+                                <div class="property-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">면적</span>
+                                        <span class="detail-value">38㎡</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">가격</span>
+                                        <span class="detail-value price">0.6억원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-type="오피스텔">
+                        <a href="productSub.html">
+                            <img src="./image/officetel1.jpg" alt="MH엘퍼스트 오페라">
+                            <div class="property-info">
+                                <span class="property-tag">오피스텔</span>
+                                <h3>MH엘퍼스트 오페라</h3>
+                                <div class="property-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>북구 칠성동2가</span>
+                                </div>
+                                <div class="property-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">면적</span>
+                                        <span class="detail-value">49㎡</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">가격</span>
+                                        <span class="detail-value price">0.9억원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-type="빌라">
+                        <a href="./productSub.html">
+                            <img src="./image/villa2.jpg" alt="내당동 빌라">
+                            <div class="property-info">
+                                <span class="property-tag">빌라</span>
+                                <h3>내당동 빌라</h3>
+                                <div class="property-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>서구 내당동</span>
+                                </div>
+                                <div class="property-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">면적</span>
+                                        <span class="detail-value">72.73㎡</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">가격</span>
+                                        <span class="detail-value price">2억원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-type="빌라">
+                        <a href="./productSub.html">
+                            <img src="./image/villa.jpg" alt="태전동 빌라">
+                            <div class="property-info">
+                                <span class="property-tag">빌라</span>
+                                <h3>태전동 빌라</h3>
+                                <div class="property-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>북구 태전동</span>
+                                </div>
+                                <div class="property-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">면적</span>
+                                        <span class="detail-value">144㎡</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">가격</span>
+                                        <span class="detail-value price">1.2억원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-type="단독주택">
+                        <a href="./productSub.html">
+                            <img src="./image/detached_house1.jpg" alt="평리동 주택">
+                            <div class="property-info">
+                                <span class="property-tag">단독주택</span>
+                                <h3>평리동 2층 주택</h3>
+                                <div class="property-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>서구 평리동</span>
+                                </div>
+                                <div class="property-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">면적</span>
+                                        <span class="detail-value">56㎡</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">가격</span>
+                                        <span class="detail-value price">1.2억원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item" data-type="단독주택">
+                        <a href="./productSub.html">
+                            <img src="./image/detached_house454.jpg" alt="황금동 주택">
+                            <div class="property-info">
+                                <span class="property-tag">단독주택</span>
+                                <h3>황금동 주택</h3>
+                                <div class="property-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>수성구 황금동</span>
+                                </div>
+                                <div class="property-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">면적</span>
+                                        <span class="detail-value">40㎡</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">가격</span>
+                                        <span class="detail-value price">1.3억원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>    
+            </section>
+        </div>
+        <div class="pagination">
+            <button id="prevPage">&larr;</button>
+            <div id="pageNumbers" class="page-numbers"></div>
+            <button id="nextPage">&rarr;</button>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer_info">
+            <p>상호: (주)승진부동산 | 대표: 홍길동 | Tel: 053-123-1234 | 사업자등록번호: 123-45-67890</p>
+            <p>주소: 대구광역시 동구 동대구로 111 (성암동) 승진빌딩 4층</p>
+            <p>중개업등록번호: 제12345-67890호 | 개인정보책임관리자: 홍길동</p>
+            <p>&copy; 2025 승진부동산. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
