@@ -82,8 +82,8 @@ body {
 
 .submit-btn {
   width: 100%;
-  padding: 12px;
-  background: #4a90e2;
+  padding: 12px 132px;
+  background: var(--accent);
   color: white;
   border: none;
   border-radius: var(--radius);
@@ -94,7 +94,7 @@ body {
 }
 
 .submit-btn:hover {
-  background: #357abd;
+  background: var(--hover);
 }
 
 /* 로그인 */
