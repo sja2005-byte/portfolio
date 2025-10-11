@@ -13,7 +13,7 @@ document.querySelector('.login-form').addEventListener('submit', (e) => {
     e.preventDefault();
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    const rememberMe = document.getElementById('remain').checked;
+    const rememberMe = document.getElementById('remember').checked;
     // 실제 서버 연동 전 테스트용 사용자 정보
     const testUser = {
         email: 'gjaegyu5@gmail.com',
@@ -38,7 +38,7 @@ document.querySelector('.login-form').addEventListener('submit', (e) => {
 
         // 로그인 상태 유지 체크 시
         if (remainLogin) {
-            localStorage.setItem('remainLogin', 'true');
+            localStorage.setItem('rememberMe', 'true');
         }
 
         // 마이페이지로 리다이렉트
