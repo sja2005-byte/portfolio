@@ -1,0 +1,40 @@
+@charset "utf-8";
+:root {
+  --accent:#6ce763;
+  --hover: #6dc167;
+  --radius: 8px;
+}
+.find-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 1.5rem;
+}
+.find-container {
+    margin: 80px auto 60px;
+    background: #fff;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: var(--radius);
+    border: 1px solid #ccc;
+}
+.form-section {
+    display: block;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.login_link {
+    
+}

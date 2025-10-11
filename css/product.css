@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-#PropertySlogan h1 {
+#PropertySlogan h2 {
     font-size: 2.5em;
     margin-top: 20px;
 }
@@ -220,6 +220,18 @@
 
 .price {
     color: #000000;
+}
+
+.property-tbu {
+    background-color: #ddd;
+    width: 100%;
+    height: 200px;
+}
+.property-tbu p {
+    font-size: 2rem;
+    color: #999;
+    text-align: center;
+    padding: 3.97rem;
 }
 
 /* 좋아요 버튼 스타일 */

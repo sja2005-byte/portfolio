@@ -80,6 +80,10 @@ body {
   border-radius: 6px;
 }
 
+.group_but {
+  margin-top: 3rem;
+}
+
 .submit-btn {
   width: 100%;
   padding: 12px 132px;
@@ -90,7 +94,6 @@ body {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 .submit-btn:hover {
@@ -100,7 +103,7 @@ body {
 /* 로그인 */
 .login_link {
   text-align: center;
-  margin-top: 16px;
+  margin-top: 2rem;
   font-size: 14px;
 }
 .login_link p {
