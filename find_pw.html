@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>로그인 찾기 페이지 - 승진부동산</title>
-  <link rel="stylesheet" href="css/webFont.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/find_id.css">
-  <script src="./js/jquery-3.7.1.js"></script>
-  <script src="./js/find_id2.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 재설정 페이지 - 승진부동산</title>
+    <link rel="stylesheet" href="css/webFont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/find_pw.css">
 </head>
 <body>
-  <!-- header -->
+<!-- header -->
   <header>
         <h1 class="hidden">부동산 중개 사이트</h1>
         <nav id="navbar">
@@ -28,27 +26,28 @@
         </nav>
   </header>
   <!-- 전체 form -->
-  <form class="find-container">
-    <h2>아이디 찾기</h2>
+  <div class="find-container">
+    <h2>비밀번호 재설정</h2>
 
-    <!-- 아이디 찾기 폼 -->
-    <div id="id-form" class="form-section active">
+    <!-- 비밀번호 찾기 폼 -->
+    <div id="pw-form" class="form-section">
       <div class="form-group">
-        <label for="name">이름</label>
-        <input type="text" id="name" placeholder="이름 입력">
-      </div>  
-      <div class="form-group">
-        <label for="email">이메일</label>
-        <input type="email" id="email" placeholder="이메일 입력">
+        <label for="userid">아이디</label>
+        <input type="text" id="userid" placeholder="아이디 입력">
       </div>
-      <div class="group_but">
-        <a href="./find_pw.html" type="button" class="submit-btn" onclick="submitUsername()">아이디 찾기</a>
+      <div class="form-group">
+        <label for="email2">이메일</label>
+        <input type="email" id="email2" placeholder="이메일 입력">
+      </div>
+      <div class="group-btn">
+        <button class="submit-btn">비밀번호 재설정</button>
       </div>
     </div>
+
     <!-- 로그인 -->
     <div class="login_link">
       <p>계정을 찾으셨나요? <a href="login.html">로그인</a></p>
     </div>
-  </form>
+  </div>
 </body>
 </html>
