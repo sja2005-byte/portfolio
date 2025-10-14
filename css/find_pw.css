@@ -4,6 +4,13 @@
   --hover: #6dc167;
   --radius: 8px;
 }
+button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
 .find-container h2 {
     text-align: center;
     margin-bottom: 25px;
@@ -35,6 +42,19 @@
     border: 1px solid #ccc;
     border-radius: 6px;
 }
+.group-btn {
+    text-align: center;
+}
+.submit-btn {
+}
 .login_link {
-    
+    text-align: center;
+}
+.login_link p{
+    color:#888;
+    font-size: 0.9rem;
+}
+.login_link a{
+    color:#4a90e2;
+
 }
