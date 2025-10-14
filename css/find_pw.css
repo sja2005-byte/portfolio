@@ -13,7 +13,7 @@ button {
 }
 .find-container h2 {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
     color: #333;
     font-size: 1.5rem;
 }
@@ -29,7 +29,7 @@ button {
     display: block;
 }
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 .form-group label {
     display: block;
@@ -43,9 +43,15 @@ button {
     border-radius: 6px;
 }
 .group-btn {
+    margin: 1rem 0;
+    padding-top: 1rem;
     text-align: center;
 }
 .submit-btn {
+    background-color: var(--accent);
+}
+.submit-btn:hover {
+    background-color: var(--hover);
 }
 .login_link {
     text-align: center;

@@ -67,6 +67,9 @@ h3{
     color: #fff;
     transition: all;
 }
+.search_slogan button:hover {
+    background-color: var(--hover);
+}
 
 /* Main */
 #main {
