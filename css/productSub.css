@@ -289,9 +289,13 @@ article {
 }
 .consent{
   grid-column:1/-1;
-  /* display:flex; */
+  display:flex;
   align-items:center;
   gap:8px;
+}
+.consent input {
+  position: relative;
+  top: 10%;
 }
 #time {
   display: flex;
