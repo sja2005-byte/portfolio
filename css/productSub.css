@@ -157,13 +157,6 @@ font-family: 'Pretendard';
 .btn.primary:hover {
   background-color: var(--hover);
 }
-.btn.ghost{
-  background:transparent;
-  border:1px solid #ddd;
-}
-.btn.ghost:hover {
-  background-color: var(--sub);
-}
 .btn.small{
   padding:6px 8px;
   font-size:13px;
