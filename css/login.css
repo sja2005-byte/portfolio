@@ -131,15 +131,17 @@ button {
 }
 .social-button.kakao span{
     display: block;
-    width: 40px;
     height: 40px;
     margin: 0 auto;
     position: absolute;
     top: 35%;
-    left: 4%;
+    left: 10%;
     transform: translateY(-25%);
     font-size: 1.5rem;
     font-weight: 900;
+}
+.kakao_img {
+    width: 100%;
 }
 
 .social-button.naver {
