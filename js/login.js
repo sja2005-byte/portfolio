@@ -17,7 +17,7 @@ document.querySelector('.login-form').addEventListener('submit', (e) => {
     // 실제 서버 연동 전 테스트용 사용자 정보
     const testUser = {
         email: 'gjaegyu5@gmail.com',
-        password: '123456',
+        password: '123456!',
         name: '손승진',
         profileImage: null
     };
@@ -37,7 +37,7 @@ document.querySelector('.login-form').addEventListener('submit', (e) => {
         localStorage.setItem('userData', JSON.stringify(userData));
 
         // 로그인 상태 유지 체크 시
-        if (remainLogin) {
+        if (rememberMe) {
             localStorage.setItem('rememberMe', 'true');
         }
 
