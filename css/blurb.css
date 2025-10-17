@@ -3,6 +3,7 @@
     --accent:#6ce763;
     --bc: #fafafa;
 }
+/* 전체 폼 */
 .blurb_section {
     max-width: 400px;
     margin: 60px auto 60px;
@@ -12,14 +13,16 @@
     /* box-shadow: 0 0 20px rgba(0,0,0,0.1); */
     border: 1px solid #ccc;
 }
+/* 전체 폼 제목 */
 .blurb_header {
     text-align: center;
 }
 .blurb_header h2 {
     font-size: 1.2rem;
 }
-.blurb_content form {
-    
+/* 본문 폼 */
+.blurb_content {
+    transition: transform 0.3s ease;
 }
 .form_group {
     display: flex;
@@ -52,9 +55,6 @@
 }
 .form_checkbox {
     padding-top: 1rem;
-}
-.blurb_content {
-    transition: transform 0.3s ease;
 }
 .blurb_content button {
     margin-top: 1rem;
