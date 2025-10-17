@@ -14,6 +14,7 @@ body {
   align-items: center;
   height: 100vh;
 }
+
 /* 로그인/비밀번호찾기 폼 */
 .find-container {
   margin: 80px auto 60px;
@@ -80,12 +81,7 @@ body {
   border-radius: 6px;
 }
 
-.group_but {
-  /* margin: 1rem 0;
-  padding-top: 1rem;
-  text-align: center; */
-}
-
+/* 버튼 */
 .submit-btn {
   background-color: var(--accent);
   width: 100%;
