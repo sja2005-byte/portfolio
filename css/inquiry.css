@@ -115,10 +115,10 @@
 }
 
 .faq-section h2 {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
 }
 .faq-section p {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     color: #555;
     font-size: 1.1rem;
 }
@@ -147,6 +147,7 @@
 .faq-answer {
     padding: 1rem;
     display: none;
+    font-size: 1.1rem;
 }
 .faq-answer.active {
     display: block;
