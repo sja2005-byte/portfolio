@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객센터 페이지 - 승진부동산</title>
+    <link rel="stylesheet" href="css/webFont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/inquiry.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/inquiry.js" defer></script>
+</head>
+<body>
+    <!-- header 및 네비게이션 -->
+    <header>
+        <h1 class="hidden">부동산 중개 사이트</h1>
+        <nav id="navbar">
+            <div class="nav_menu">
+                <a href="index.html" class="logo">승진부동산</a>
+                <ul>
+                    <li><a href="company.html">회사소개</a></li>
+                    <li><a href="inquiry.html">문의하기</a></li>
+                    <li><a href="product.html">매물찾기</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="blurb.html">중개사무소 광고문의</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Slogan 섹션 -->
+    <section class="subHeader_inquiry">
+        <h2>문의하기</h2>
+        <p>궁금하신 점이 있으시다면 언제든 문의해주세요</p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="contact-container">
+        <!-- 연락처 -->
+        <section class="contact-grid">
+            <h2 class="hidden">문의 방법</h2>
+            <article class="contact-item">
+                <i class="fas fa-phone"></i>
+                <h3>전화 문의</h3>
+                <p>02-123-4567</p>
+                <p>평일 09:00 - 18:00</p>
+            </article>
+            <article class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h3>이메일 문의</h3>
+                <p>contact@realestate.com</p>
+                <p>24시간 접수 가능</p>
+            </article>
+            <article class="contact-item">
+                <i class="fas fa-comments"></i>
+                <h3>실시간 상담</h3>
+                <p>카카오톡 ID: realplus</p>
+                <p>평일 09:00 - 18:00</p>
+            </article>
+        </section>
+        <!-- 문의하기 form -->
+        <section class="contact-form">
+            <h2 class="hidden">문의 제출 양식</h2>
+            <div class="success-message" id="successMessage">
+                문의가 성공적으로 접수되었습니다. 빠른 시일 내에 답변 드리겠습니다.
+            </div>
+            <form id="contactForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">이름 *</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">연락처 *</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일 *</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">문의 내용 *</label>
+                    <textarea id="message" name="message" placeholder="문의 내용을 입력해주세요" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">문의하기</button>
+                </div>
+            </form>
+        </section>
+        <!-- FAQ 섹션 -->
+        <section class="faq-section">
+            <h2>자주 묻는 질문</h2>
+            <p>사용자의 편의를 위해 자주 묻는 질문과 답변을 모아놓았습니다.
+                원하시는 질문을 찾아보세요!</p>
+            <dl class="faq-item">
+                <dt class="faq-question">Q1. 매물 정보를 수정하고 싶어요.<i class="fas fa-chevron-down"></i></dt>
+                <dd class="faq-answer">
+                    매물 상세에서 '수정요청' 버튼을 클릭해 주세요.&nbsp;
+                    직접 수정이 불가능한 경우 담당자가 확인 후 처리합니다.
+                </dd>
+            </dl>
+            <dl class="faq-item">
+                <dt class="faq-question">Q2. 결제 영수증을 발급받을 수 있나요?<i class="fas fa-chevron-down"></i></dt>
+                <dd class="faq-answer">
+                    마이페이지 > 결제내역에서 영수증을 발급하실 수 있습니다.&nbsp;
+                    필요 시 고객센터로 문의 주세요.
+                </dd>
+            </dl>
+            <dl class="faq-item">
+                <dt class="faq-question">Q3. 신고한 매물 처리 기간은 얼마나 걸리나요?<i class="fas fa-chevron-down"></i></dt>
+                <dd class="faq-answer">
+                    통상 2~3영업일 내에 조사 후 조치하며,&nbsp;
+                    상황에 따라 더 걸릴 수 있습니다.
+                </dd>
+            </dl>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer_info">
+            <p>상호: (주)승진부동산 | 대표: 홍길동 | Tel: 053-123-1234 | 사업자등록번호: 123-45-67890</p>
+            <p>주소: 대구광역시 동구 동대구로 111 (성암동) 승진빌딩 4층</p>
+            <p>중개업등록번호: 제12345-67890호 | 개인정보책임관리자: 홍길동</p>
+            <p>&copy; 2025 승진부동산. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
